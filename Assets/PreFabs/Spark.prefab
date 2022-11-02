@@ -78,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8c133c8b6be98cc4388f0e36cbaea405, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebd6a66e282a34b4ab772f4cb984b7ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 6.3, y: 6.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edefbce6fb38b3442b0c4bce01c959c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 400
+  speed: 650
   Sonidobala: {fileID: 3675011700478844704, guid: 09b5dc080cf1c5d458dd9261d670797d, type: 3}
 --- !u!114 &1240083824870194512
 MonoBehaviour:
@@ -166,7 +166,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d5d432cfd5bf3724abfbf715d2bf1a73, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.345
   m_Pitch: 1
   Loop: 0
   Mute: 0

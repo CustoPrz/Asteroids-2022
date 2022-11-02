@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class NaveScript : MonoBehaviour
@@ -20,6 +21,7 @@ public class NaveScript : MonoBehaviour
         Vector2 direccion = new Vector2(Random.Range(-1f, 1f),0);
         direccion = direccion * speed;
         rb.AddForce(direccion);
+        NaveController.instance.Vidasnave =+ 3;
     }
 
     // Update is called once per frame
@@ -46,8 +48,11 @@ public class NaveScript : MonoBehaviour
             parada();
             Vector2 direccion = new Vector2(0.2f, 0);
             rb.AddForce(direccion*speed);
-            
             }
+        if (NaveController.instance.Vidasnave == 0) 
+        { 
+            Muerte();
+        }
 
 
 
@@ -56,9 +61,12 @@ public class NaveScript : MonoBehaviour
     }
     public void Muerte()
     {
-      
+        NaveController.instance.Conteonave -= 1;
+        NaveController.instance.timer = 0;
         GameManager.instance.puntuacion += 300;
         Destroy(gameObject);
+        
+        
 
     }
     void parada()

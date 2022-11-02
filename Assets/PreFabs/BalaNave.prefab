@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8c133c8b6be98cc4388f0e36cbaea405, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e531ef8eb7567740bd547571da98251, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,8 +137,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.15, y: 0.64}
+  m_Offset: {x: 0, y: -0.04737723}
+  m_Size: {x: 0.15, y: 0.73475456}
   m_Direction: 0
 --- !u!82 &4340822845763022925
 AudioSource:
@@ -150,9 +150,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d5d432cfd5bf3724abfbf715d2bf1a73, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b718f69a75bf6524c9ca768868b658df, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.42
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -26,11 +26,11 @@ public class BulletController : MonoBehaviour
             collision.gameObject.GetComponent<AsteroidController>().Muerte();
             Destroy(gameObject);
             GameObject temp = Instantiate(Sonidobala);
-            Destroy(temp, 2.5f);
+            Destroy(temp, 1.3f);
         }
         if (collision.tag == "Nave")  //Hay que hacer el contador en el navecontroller
         {
-            collision.gameObject.GetComponent<NaveScript>().Muerte();
+            NaveController.instance.Vidasnave -= 1;
             Destroy(gameObject);
             GameObject temp = Instantiate(Sonidobala);
         }

@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (muerto==false)
        { 
         float vertical = Input.GetAxis("Vertical");
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
            GameObject temp = Instantiate(bala, boca.transform.position, transform.rotation);
-           Destroy(temp, 2.5f);
+           Destroy(temp, 1.3f);
         }
        }
     }
